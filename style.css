@@ -1,8 +1,9 @@
+
 * {box-sizing: border-box}
 body {
 	font-family: Verdana;
 	margin: 0;
-	background-color: #a1d0e3
+	background-color: #bcb4af;
 	}
 
 .navbar {
@@ -22,12 +23,13 @@ body {
 
 }
 
+
 .navbar a:hover {
-  	color: dodgerblue;
+  	color: #225156;
 }
 
 .navbar a.active {
-  	color: black;
+  	color: #d7c1b1;
 }
 .about-dog {
 	padding: 10px;
@@ -67,6 +69,7 @@ body {
 
 .title {
 	text-align: center;
+	color:#d7c1b1;
 
 }
 
@@ -142,7 +145,7 @@ body {
 }
 
 .header {
-	background-color: #62a9e3;
+	background-color: #0a1f23;
 	margin: 0;
 	top: 0;
 }
