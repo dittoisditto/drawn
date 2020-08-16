@@ -1,0 +1,148 @@
+* {box-sizing: border-box}
+body {
+	font-family: Verdana;
+	margin: 0;
+	background-color: #a1d0e3
+	}
+
+.navbar {
+  	overflow: hidden;
+  	margin: 0px 20vw;
+  	bottom:0;
+}
+
+.navbar a {
+  	float: left;
+  	padding: 12px;
+  	color: white;
+  	text-decoration: none;
+  	font-size: 12px;
+  	width: 25%; /* Four links of equal widths */
+  	text-align: center;
+
+}
+
+.navbar a:hover {
+  	color: dodgerblue;
+}
+
+.navbar a.active {
+  	color: black;
+}
+.about-dog {
+	padding: 10px;
+}
+
+.about-text {
+	padding: 10px;
+}
+.content {
+	text-align: center;
+}
+.button {
+	text-decoration: none;
+	background-color: dodgerblue;
+	text-align: center;
+	padding: 5px 20px;
+	color: white;
+}
+.center {
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	background-size: contain;
+  	border-radius: 50%;
+  	width: 150px;
+  	padding: 40px;
+}
+
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+.fade-in {
+	animation: fadeIn ease .5s;
+}
+
+.title {
+	text-align: center;
+
+}
+
+.center_align {
+	text-align:center;
+}
+
+@media screen and (min-width: 501px) and (max-width: 850px) {
+	.navbar a {
+	  	float: none;
+	  	display: block;
+	  	width: 100%;
+	  	text-align: center;
+	}
+	.about-dog {
+		max-width:100%;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+  	.navbar a {
+    	float: none;
+    	display: block;
+    	width: 100%;
+    	text-align: center;
+  	}
+	.about-dog {
+		max-width:100%;
+	}
+
+}
+
+@media screen and (min-width: 851px) {
+	.about-dog {
+		max-width: 50%;
+		float:left;
+	}
+	.about-text {
+		max-width: 50%;
+		float:right;
+	}
+	.about-text {
+		font-size: 1.25vw;
+	}
+
+	.menu {
+	  	width: 35%;
+	  	float: left;
+	  	padding: 15px;
+	  	border: 1px solid red;
+	}
+
+	.main {
+	  	width: 65%;
+	  	float: left;
+	  	padding: 15px;
+	  	border: 1px solid red;
+	  	height: 30vw;
+	  	font-size: 2vw;
+	}
+	.contact_img {
+	  	max-width: 100%;
+	  	float: left;
+	  	padding: 5px;
+	}
+
+	.contact_head {
+		background-color: blue;
+		max-width: 100%;
+	}
+
+}
+
+.header {
+	background-color: #62a9e3;
+	margin: 0;
+	top: 0;
+}
