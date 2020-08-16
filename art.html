@@ -4,27 +4,57 @@
 
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="topnav.css">
+<link rel="stylesheet" type="text/css" href="tabs.css">
 <title>Dogs</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class = "fade-in">
 
-	<div class = "header">
-		<img src="avatar.png" class="center">
-		<h3 class = "title">Helen Wu</h3>
-		<div class="navbar">
-			<a class="active" href="index.html">Home</a>
-			<a href="about.html">About</a>
-			<a href="art.html">Art</a>
-			<a href="contact.html">Contact</a>
+	<!-- Nav bar -->
+		<div class = "header">
+			<img src="avatar.png" class="center">
+			<h3 class = "title">Helen Wu</h3>
+			<div class="navbar">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a class="active" href="art.html">Art</a>
+				<a href="contact.html">Contact</a>
+			</div>
 		</div>
-	</div>
 	<div class="content">
 		<h1 class="title">Doggos</h1>
 		<p class ="content">There are many different dog breeds that can be found all over the world. How is anyone supposed to remember every single one?</p>
-		<img class = "about-dog"src="https://petpedia.co/wp-content/uploads/2019/12/50-Most-Popular-Dog-Breeds-Infographic-768x24100.jpg">
-	</div>
 
+<!-- tabs -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="openCity(event, 'More')">More</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="More" class="tabcontent">
+  <h3>More</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+	</div>
+<script src="tabs.js"></script>
 </body>
 </html>
