@@ -3,81 +3,201 @@
 body {
 	font-family: Verdana;
 	margin: 0;
-	background-color: #1f2833;
+	background-color: #fff;
 	transition: 0.3s;
 	}
-
-
-.about-dog {
-	padding: 10px;
-	max-width: 100%
-}
 
 .about-text {
 	padding: 10px;
 }
-.content {
+
+.about-team {
+	max-width:100%;
+	padding: 10px;
 	text-align: center;
+	background: #183c31;
+	overflow: inherit;
 }
-.button {
-	text-decoration: none;
-	background-color: dodgerblue;
-	text-align: center;
-	padding: 5px 20px;
+.about-team h3 {
+	color:#b7ffaa;
+}
+.about-team h4 {
+	color: #3fa152;
+}
+.about-team p, a {
 	color: white;
 }
 
-.about-table {
-	max-width:100%;
-	padding: 10px;
-	margin:5px;
+.class-desc {
+	width: 50%;
+	float:left;
+	background-color: white;
+	color: black;
+	margin-bottom: 10px;
+	margin-top: 10px;
 	text-align: center;
-	background: #c5c6c7;
-
 }
 
-
-/*@keyframes fadeIn {
-	0% {opacity:0;}
-	100% {opacity:1;}
-}
-
-.fade-in {
-	animation: fadeIn ease .5s;
-}
-*/
 .title {
 	text-align: center;
-	color:#66fcf1;
+	color:white;
+}
+
+.people {
+	width: 250px;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	margin: 5px;
+}
+
+.tag {
+	float: left;
+	position: absolute;
+	z-index: 1000;
+	background-color: #bcddd3;
+	padding: 5px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+ }
+.tag a {
+	background-color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+	color: black;
+	margin: 10px;
+}
+.tag p {
+	padding: 40px;
+}
+
+ .container {
+	 position:relative;
+ }
+.each-person p{
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: left;
+}
+
+.contact-email {
+	background-color: #2a6b37;
+	padding: 20px;
+	margin: 10px;
+	width: 300px;
+	text-align: center;
+	color: white;
+	height: 150px;
+
+}
+.contact-email a {
+	text-decoration: none;
+}
+
+
+.contact-image {
+	border-radius: 50%;
+	width: 30%;
 
 }
 
-.center_align {
-	text-align:center;
+
+
+@media screen and (min-width: 641px) and (max-width: 1290px) {
+	.tag {
+		left: 25%;
+		top: 10%;
+		height: 80%;
+		width: 45%;
+	 }
+	 .tag h1{
+		 font-size: 5vw;
+	 }
+	 .tag p {
+		 padding: 10px;
+		 font-size: 3vw;
+	 }
+	 .about-team {
+		 margin-left: 5%;
+		 margin-right: 5%;
+	 }
+	 .contact-image {
+		 display: block;
+		 margin-left: auto;
+		 margin-right: auto;
+	 }
+	 .contact-email {
+		margin-left: auto;
+		margin-right: auto;
+	 }
+	 .contact-desc {
+		 width: 100%;
+		 padding: 20px;
+		 text-align: center;
+	 }
+	 .class-desc {
+		 height: 350px;
+		 padding: 20px;
+	 }
+	 .classes-content {
+		 padding: 20px;
+		 height: 1350px;
+	 }
+	 .contact-main {
+	 	height: 850px;
+	 }
+
 }
 
-@media screen (min-width: 501px) and (max-width: 850px) {
-	.about-dog {
-		max-width:100%;
+@media screen and (max-width: 640px) {
+
+	.tag {
+		height: 100%;
+		width: 100%;
+	 }
+	 .tag h1{
+		 font-size: 5vw;
+	 }
+	 .about-team {
+		 margin:0;
+	 }
+	 .contact-image {
+		 display: block;
+		 margin-left: auto;
+		 margin-right: auto;
+	 }
+	 .contact-email {
+		margin-left: auto;
+		margin-right: auto;
+	 }
+	 .contact-desc {
+		 width: 100%;
+		 padding: 20px;
+		 text-align: center;
+	 }
+	 .classes-content {
+ 		padding: 10px;
+		height: 1500px;
+ 	}
+	.class-desc {
+		padding: 10px;
+		height: 400px;
 	}
+	.contact-main {
+		height: 800px;
+	}
+
 
 }
 
-@media screen and (max-width: 500px) {
-	.about-dog {
-		max-width:100%;
-	}
-	.about-table table, tbody, tr {
-		max-width: 100%;
-		margin: 25px;
-	}
-
-}
-
-@media screen and (min-width: 851px) {
-	.about-dog {
-		max-width: 50%;
-	}
+@media screen and (min-width: 1291px) {
+	.tag {
+		left: 30%;
+		top: 25%;
+		height: 50%;
+		width: 35%;
+	 }
 	.about-text {
 		font-size: 1.25vw;
 	}
@@ -97,26 +217,82 @@ body {
 	  	height: 30vw;
 	  	font-size: 2vw;
 	}
-	.contact_img {
-	  	max-width: 100%;
-	  	float: left;
-	  	padding: 5px;
+	.about-team {
+		margin-left: 10%;
+		margin-right: 10%;
 	}
-
-	.contact_head {
-		background-color: blue;
-		max-width: 100%;
+	.tag h1{
+		font-size: 3vw;
+		margin-top: 5%;
 	}
-
-	.about-table table, tbody, tr {
-		right:0;
-		left:0;
-		top:0;
-		bottom:0;
+	.each-person {
+		padding-left: 15vw;
+		padding-right: 15vw;
+	}
+	.contact-email {
+		float:left;
+	}
+	.contact-image {
+		float:left;
+		margin-right: 50px;
+		margin-left: 200px;
+	}
+	.contact-desc {
+		float:left;
+		width: 50%;
+		padding: 20px;
+	}
+	.contact-desc p {
 		width: 100%;
-		margin: 25px;
-		padding: 0;
+	}
+	.classes-content {
+		margin-left: 200px;
+		margin-right: 200px;
+		padding: 40px;
+		height: 1000px;
+	}
+	.classes-content p {
+		padding-left: 50px;
+		padding-right: 50px;
+		font-size:.9vw;
+	}
+	.class-desc {
+		padding: 1%;
+		float:left;
+		height: 250px;
+	}
+	.contact-main {
+		height: 500px;
 	}
 
+}
 
+.welcome-image {
+	width:100%;
+
+}
+.page-title {
+	text-align: center;
+}
+.classes-content {
+	background: #183c31;
+	color:white;
+}
+
+
+.classes-content h2 {
+	text-align: center;
+}
+.class-desc a {
+	background-color: #3fa152;
+	text-decoration: none;
+	padding: 10px 20px;
+	margin: 5px;
+}
+.date-time {
+	text-align: center;
+}
+
+.classes-content h3 {
+	text-align: center;
 }
