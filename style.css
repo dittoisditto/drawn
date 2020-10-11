@@ -1,298 +1,67 @@
-
+/* https://coolors.co/393d3f-fdfdff-c6c5b9-62929e-546a7b*/
 * {box-sizing: border-box}
 body {
 	font-family: Verdana;
 	margin: 0;
-	background-color: #fff;
+	background-color: #FDFDFF;
 	transition: 0.3s;
 	}
 
-.about-text {
-	padding: 10px;
-}
+	.art_gallery {
+		float: left;
+	}
 
-.about-team {
-	max-width:100%;
-	padding: 10px;
-	text-align: center;
-	background: #183c31;
-	overflow: inherit;
-}
-.about-team h3 {
-	color:#b7ffaa;
-}
-.about-team h4 {
-	color: #3fa152;
-}
-.about-team p, a {
-	color: white;
-}
-
-.class-desc {
-	width: 50%;
-	float:left;
-	background-color: white;
-	color: black;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	text-align: center;
-}
-
-.title {
-	text-align: center;
-	color:white;
-}
-
-.people {
-	width: 250px;
-	border-radius: 50%;
-	position: relative;
-	overflow: hidden;
-	margin: 5px;
-}
-
-.tag {
-	float: left;
-	position: absolute;
-	z-index: 1000;
-	background-color: #bcddd3;
-	padding: 5px;
-	color: black;
-	font-weight: bold;
-	text-align: center;
- }
-.tag a {
-	background-color: white;
-	text-decoration: none;
-	padding: 10px 20px;
-	color: black;
-	margin: 10px;
-}
-.tag p {
-	padding: 40px;
-}
-
- .container {
-	 position:relative;
- }
-.each-person p{
-	padding-left: 40px;
-	padding-right: 40px;
-	text-align: left;
-}
-
-.contact-email {
-	background-color: #2a6b37;
-	padding: 20px;
-	margin: 10px;
-	width: 300px;
-	text-align: center;
-	color: white;
-	height: 150px;
-
-}
-.contact-email a {
-	text-decoration: none;
-}
-
-
-.contact-image {
-	border-radius: 50%;
-	width: 30%;
-
-}
-
-
-
-@media screen and (min-width: 641px) and (max-width: 1290px) {
-	.tag {
-		left: 25%;
-		top: 10%;
-		height: 80%;
-		width: 45%;
-	 }
-	 .tag h1{
-		 font-size: 5vw;
-	 }
-	 .tag p {
-		 padding: 10px;
-		 font-size: 3vw;
-	 }
-	 .about-team {
-		 margin-left: 5%;
-		 margin-right: 5%;
-	 }
-	 .contact-image {
-		 display: block;
-		 margin-left: auto;
-		 margin-right: auto;
-	 }
-	 .contact-email {
-		margin-left: auto;
-		margin-right: auto;
-	 }
-	 .contact-desc {
-		 width: 100%;
-		 padding: 20px;
-		 text-align: center;
-	 }
-	 .class-desc {
-		 height: 350px;
-		 padding: 20px;
-	 }
-	 .classes-content {
-		 padding: 20px;
-		 height: 1350px;
-	 }
-	 .contact-main {
-	 	height: 850px;
-	 }
-
-}
-
-@media screen and (max-width: 640px) {
-
-	.tag {
-		height: 100%;
+	.art_gallery h3 {
+		float:left;
 		width: 100%;
-	 }
-	 .tag h1{
-		 font-size: 5vw;
-	 }
-	 .about-team {
-		 margin:0;
-	 }
-	 .contact-image {
-		 display: block;
-		 margin-left: auto;
-		 margin-right: auto;
-	 }
-	 .contact-email {
-		margin-left: auto;
-		margin-right: auto;
-	 }
-	 .contact-desc {
-		 width: 100%;
-		 padding: 20px;
-		 text-align: center;
-	 }
-	 .classes-content {
- 		padding: 10px;
-		height: 1500px;
- 	}
-	.class-desc {
-		padding: 10px;
-		height: 400px;
-	}
-	.contact-main {
-		height: 800px;
+		text-align: center;
 	}
 
-
-}
-
-@media screen and (min-width: 1291px) {
-	.tag {
-		left: 30%;
-		top: 25%;
-		height: 50%;
-		width: 35%;
-	 }
-	.about-text {
-		font-size: 1.25vw;
+	div.gallery {
+	  border: 1px solid #ccc;
 	}
 
-	.menu {
-	  	width: 35%;
-	  	float: left;
-	  	padding: 15px;
-	  	border: 1px solid red;
+	div.gallery:hover {
+	  border: 1px solid #777;
 	}
 
-	.main {
-	  	width: 65%;
-	  	float: left;
-	  	padding: 15px;
-	  	border: 1px solid red;
-	  	height: 30vw;
-	  	font-size: 2vw;
-	}
-	.about-team {
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-	.tag h1{
-		font-size: 3vw;
-		margin-top: 5%;
-	}
-	.each-person {
-		padding-left: 15vw;
-		padding-right: 15vw;
-	}
-	.contact-email {
-		float:left;
-	}
-	.contact-image {
-		float:left;
-		margin-right: 50px;
-		margin-left: 200px;
-	}
-	.contact-desc {
-		float:left;
-		width: 50%;
-		padding: 20px;
-	}
-	.contact-desc p {
-		width: 100%;
-	}
-	.classes-content {
-		margin-left: 200px;
-		margin-right: 200px;
-		padding: 40px;
-		height: 1000px;
-	}
-	.classes-content p {
-		padding-left: 50px;
-		padding-right: 50px;
-		font-size:.9vw;
-	}
-	.class-desc {
-		padding: 1%;
-		float:left;
-		height: 250px;
-	}
-	.contact-main {
-		height: 500px;
+	div.gallery img {
+	  width: 100%;
+	  height: auto;
 	}
 
-}
+	div.desc {
+	  padding: 15px;
+	  text-align: center;
+	}
 
-.welcome-image {
-	width:100%;
+	* {
+	  box-sizing: border-box;
+	}
 
-}
-.page-title {
-	text-align: center;
-}
-.classes-content {
-	background: #183c31;
-	color:white;
-}
+	.responsive {
+	  padding: 0 6px;
+	  float: left;
+	  width: 24.99999%;
+	}
+	.responsive h4 {
+		text-align: center;
+	}
+	@media only screen and (max-width: 700px) {
+	  .responsive {
+	    width: 49.99999%;
+	    margin: 6px 0;
+	  }
+	}
 
+	@media only screen and (max-width: 500px) {
+	  .responsive {
+	    width: 100%;
+	  }
+	}
 
-.classes-content h2 {
-	text-align: center;
-}
-.class-desc a {
-	background-color: #3fa152;
-	text-decoration: none;
-	padding: 10px 20px;
-	margin: 5px;
-}
-.date-time {
-	text-align: center;
-}
-
-.classes-content h3 {
-	text-align: center;
-}
+	.clearfix:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
