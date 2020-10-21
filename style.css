@@ -12,17 +12,19 @@ font-family: 'Josefin Sans', sans-serif;
 		font-size: 50px;
 	}
 	.general-paragraph {
-		padding: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 	.art_gallery {
 		float: left;
 	}
 
 	.middlegradestem {
-		width: 100%;
-		padding: 10px;
-		border: none;
+		width: 90%;
+		border: .5px solid #62929E;
 		height: 600px;
+		display:block;
+		margin: 10px auto;
 	}
 
 	.art_gallery h3, h2 {
@@ -64,6 +66,7 @@ font-family: 'Josefin Sans', sans-serif;
 	  }
 		.middlegradestem {
 			height: 600px;
+			padding: 10px;
 		}
 	}
 
@@ -72,7 +75,10 @@ font-family: 'Josefin Sans', sans-serif;
 	    width: 100%;
 	  }
 		.middlegradestem {
-			height: 400px;
+			height: 0;
+			padding: 0px;
+			width: 0;
+			border: 0;
 		}
 	}
 
@@ -80,4 +86,28 @@ font-family: 'Josefin Sans', sans-serif;
 	  content: "";
 	  display: table;
 	  clear: both;
+	}
+
+	.links {
+		color: black;
+	}
+	.links:hover {
+		color: gray;
+	}
+
+	.button {
+		text-align: center;
+		margin: 20px;
+	}
+
+	.button a {
+		background-color: #546a7b;
+		text-decoration: none;
+		padding: 10px 20px;
+		color: #fdfdff;
+	}
+
+	.button a:hover {
+		background-color: #62929e;
+		color: #c6c5b9;
 	}
