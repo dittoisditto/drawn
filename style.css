@@ -1,17 +1,31 @@
+
 /* https://coolors.co/393d3f-fdfdff-c6c5b9-62929e-546a7b*/
 * {box-sizing: border-box}
 body {
-	font-family: Verdana;
+font-family: 'Josefin Sans', sans-serif;
 	margin: 0;
 	background-color: #FDFDFF;
-	transition: 0.3s;
 	}
-
+	h1 {
+		text-align: center;
+  	font-family: 'Nanum Brush Script', cursive;
+		font-size: 50px;
+	}
+	.general-paragraph {
+		padding: 30px;
+	}
 	.art_gallery {
 		float: left;
 	}
 
-	.art_gallery h3 {
+	.middlegradestem {
+		width: 100%;
+		padding: 10px;
+		border: none;
+		height: 600px;
+	}
+
+	.art_gallery h3, h2 {
 		float:left;
 		width: 100%;
 		text-align: center;
@@ -35,10 +49,6 @@ body {
 	  text-align: center;
 	}
 
-	* {
-	  box-sizing: border-box;
-	}
-
 	.responsive {
 	  padding: 0 6px;
 	  float: left;
@@ -52,12 +62,18 @@ body {
 	    width: 49.99999%;
 	    margin: 6px 0;
 	  }
+		.middlegradestem {
+			height: 600px;
+		}
 	}
 
 	@media only screen and (max-width: 500px) {
 	  .responsive {
 	    width: 100%;
 	  }
+		.middlegradestem {
+			height: 400px;
+		}
 	}
 
 	.clearfix:after {

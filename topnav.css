@@ -3,15 +3,14 @@
   	margin: 0px 20vw;
   	bottom:0;
 }
-
 .navbar a {
-  	float: left;
-  	padding: 12px;
   	color: #FDFDFF;
   	text-decoration: none;
-  	font-size: 12px;
-  	width: 25%; /* Four links of equal widths */
-  	text-align: center;
+  	font-size: 15px;
+    float: left;
+    padding: 12px;
+    text-align: center;
+    width: 25%; /* Four links of equal widths */
 
 }
 
@@ -63,4 +62,6 @@
 	color:white;
 	margin:0;
 	padding: 1vw;
+  font-size: 50px;
+  font-family: 'Nanum Brush Script', cursive;
 }
