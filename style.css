@@ -11,12 +11,55 @@ font-family: 'Josefin Sans', sans-serif;
   	font-family: 'Nanum Brush Script', cursive;
 		font-size: 50px;
 	}
+	
+
+	.tooltip {
+	  position: relative;
+	  display: inline-block;
+	}
+/*<div class="tooltip">
+<span class="tooltiptext">Tooltip text</span>
+</div>*/
+	.tooltip .tooltiptext {
+	  width: 0px;
+		height: 0px;
+	  background-color: #393D3F;
+	  color: #fff;
+	  text-align: center;
+	  padding: 5px 0;
+
+	  /* Position the tooltip */
+	  position: absolute;
+	  z-index: 100;
+	  bottom: 100%;
+	  left: 0%;
+		font-size: 0px;
+
+		margin: 0px 0px 10px 0px;
+	}
+
+	.tooltip:hover .tooltiptext {
+	 	width: 100%;
+		font-size: 18px;
+		height: auto;
+		padding: 10px 5px;
+				border: solid 1px white;
+	}
+
 	.general-paragraph {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
 	.art_gallery {
 		float: left;
+	}
+	.information {
+		width: 24.99999%;
+		float:left;
+		padding: 20px;
+	}
+	.information h4 {
+		text-align: center;
 	}
 
 	.middlegradestem {
@@ -64,9 +107,20 @@ font-family: 'Josefin Sans', sans-serif;
 	    width: 49.99999%;
 	    margin: 6px 0;
 	  }
+		.info {
+			height: 100%;
+			width: 100%;
+ 		}
 		.middlegradestem {
 			height: 600px;
 			padding: 10px;
+		}
+		.info p {
+			padding: 5px;
+		}
+		.welcome img {
+			width: 0%;
+			height: 0%;
 		}
 	}
 
@@ -80,8 +134,32 @@ font-family: 'Josefin Sans', sans-serif;
 			width: 0;
 			border: 0;
 		}
+		.info {
+			height: 100%;
+			width: 100%;
+			background-color: red;
+			float:left;
+ 		}
+		.welcome img {
+			width: 0%;
+			height: 0%;
+		}
+		.info p {
+			padding: 5px;
+		}
+	}
+	@media only screen and (min-width: 701px) {
+		.info {
+		float: left;
+		position: absolute;
+		z-index: 1000;
+		left: 5%;
+		top: 5%;
+		height: 75%;
+		width: 35%;
 	}
 
+	}
 	.clearfix:after {
 	  content: "";
 	  display: table;
@@ -111,3 +189,26 @@ font-family: 'Josefin Sans', sans-serif;
 		background-color: #62929e;
 		color: #c6c5b9;
 	}
+
+	.info {
+
+	padding: 5px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+
+ }
+.info a {
+	text-decoration: underline;
+	color: black;
+}
+.info a:hover {
+	color: gray;
+}
+.info p {
+	padding: 20px;
+}
+
+ .welcome {
+	 position:relative;
+ }
