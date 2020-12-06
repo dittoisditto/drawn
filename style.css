@@ -2,241 +2,253 @@
 /* https://coolors.co/393d3f-fdfdff-c6c5b9-62929e-546a7b*/
 * {box-sizing: border-box}
 body {
-font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	margin: 0;
 	background-color: #FDFDFF;
-	}
-	h1 {
-		text-align: center;
-  	font-family: 'Nanum Brush Script', cursive;
-		font-size: 50px;
-	}
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Nanum Brush Script', cursive;
+	font-size: 50px;
+}
+
+.general-paragraph {
+	padding-left: 30px;
+	padding-right: 30px;
+}
 
 
-	.tooltip {
-	  position: relative;
-	  display: inline-block;
-	}
-/*<div class="tooltip">
-<span class="tooltiptext">Tooltip text</span>
-</div>*/
-	.tooltip .tooltiptext {
-	  width: 0px;
-		height: 0px;
-	  background-color: #393D3F;
-	  color: #fff;
-	  text-align: center;
-	  padding: 5px 0;
+.button {
+	text-align: center;
+	margin: 20px;
+}
 
-	  /* Position the tooltip */
-	  position: absolute;
-	  z-index: 100;
-	  bottom: 100%;
-	  left: 0%;
-		font-size: 0px;
+.button a {
+	background-color: #546a7b;
+	text-decoration: none;
+	padding: 10px 20px;
+	color: #fdfdff;
+}
 
-		margin: 0px 0px 10px 0px;
-	}
+.button a:hover {
+	background-color: #62929e;
+	color: #c6c5b9;
+}
 
-	.tooltip:hover .tooltiptext {
-	 	width: 100%;
-		font-size: 18px;
-		height: auto;
-		padding: 10px 5px;
-				border: solid 1px white;
-	}
+/* Index.html */
 
-	.general-paragraph {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-	.art_gallery {
-		float: left;
-	}
-	.information {
-		width: 24.99999%;
-		float:left;
-		padding: 20px;
-	}
-	.information h4 {
-		text-align: center;
-	}
+.welcome {
+	position:relative;
+}
 
-	.double-information {
-		width: 49.99999%;
-		float: left;
-		padding: 20px;
-		height: 350px;
-		border: solid 1px black;
-		overflow: auto;
-	}
-	.double-information h3 {
-		text-align: center;
-	}
-
-	.middlegradestem {
-		width: 90%;
-		border: .5px solid #62929E;
-		height: 600px;
-		display:block;
-		margin: 10px auto;
-	}
-
-	.art_gallery  h3, h2, h4 {
-		float:left;
-		width: 100%;
-		text-align: center;
-	}
-
-	div.gallery {
-	  border: 1px solid #ccc;
-	}
-
-	div.gallery:hover {
-	  border: 1px solid #777;
-	}
-
-	div.gallery img {
-	  width: 100%;
-	  height: auto;
-	}
-
-	div.desc {
-	  padding: 15px;
-	  text-align: center;
-	}
-
-	.responsive {
-	  padding: 0 6px;
-	  float: left;
-	  width: 24.99999%;
-	}
-	.responsive h4 {
-		text-align: center;
-	}
-	@media only screen and (max-width: 700px) {
-	  .responsive {
-	    width: 49.99999%;
-	    margin: 6px 0;
-	  }
-		.info {
-			height: 100%;
-			width: 100%;
- 		}
-		.middlegradestem {
-			height: 600px;
-			padding: 10px;
-		}
-		.info p {
-			padding: 5px;
-		}
-		.welcome img {
-			width: 0%;
-			height: 0%;
-		}
-		.information {
-			width: 49.99999%;
-			float:left;
-			padding: 10px;
-		}
-		.double-information {
-			width: 100%;
-			height: auto;
-		}
-	}
-
-	@media only screen and (max-width: 500px) {
-	  .responsive {
-	    width: 100%;
-	  }
-		.middlegradestem {
-			height: 0;
-			padding: 0px;
-			width: 0;
-			border: 0;
-		}
-		.info {
-			height: 100%;
-			width: 100%;
-			background-color: white;
-			float:left;
- 		}
-		.welcome img {
-			width: 0%;
-			height: 0%;
-		}
-		.info p {
-			padding: 5px;
-		}
-		.information {
-			width: 100%;
-		}
-		.double-information {
-			width: 100%;
-			height: auto;
-		}
-	}
-	@media only screen and (min-width: 701px) {
-		.info {
-		float: left;
-		position: absolute;
-		z-index: 1000;
-		left: 5%;
-		top: 5%;
-		height: 75%;
-		width: 35%;
-	}
-
-	}
-	.clearfix:after {
-	  content: "";
-	  display: table;
-	  clear: both;
-	}
-
-	.links {
-		color: black;
-	}
-	.links:hover {
-		color: gray;
-	}
-
-	.button {
-		text-align: center;
-		margin: 20px;
-	}
-
-	.button a {
-		background-color: #546a7b;
-		text-decoration: none;
-		padding: 10px 20px;
-		color: #fdfdff;
-	}
-
-	.button a:hover {
-		background-color: #62929e;
-		color: #c6c5b9;
-	}
-
-	.info {
-
+.info {
 	padding: 5px;
 	color: black;
 	font-weight: bold;
 	text-align: center;
+}
 
- }
 .info a {
 	text-decoration: underline;
 	color: black;
 }
+
 .info a:hover {
 	color: gray;
 }
+
 .info p {
 	padding: 20px;
 }
 
- .welcome {
-	 position:relative;
- }
+/* about.html */
+.double-information {
+	width: 49.99999%;
+	float: left;
+	padding: 20px;
+	height: 350px;
+	border: solid 1px black;
+	overflow: auto;
+}
+
+.double-information h3 {
+	text-align: center;
+}
+
+.information {
+	width: 24.99999%;
+	float:left;
+	padding: 20px;
+}
+
+.information h4 {
+	text-align: center;
+}
+
+
+/* stem.html */
+
+.middlegradestem {
+	width: 90%;
+	border: .5px solid #62929E;
+	height: 600px;
+	display:block;
+	margin: 10px auto;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  width: 0px;
+	height: 0px;
+  background-color: #393D3F;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 100;
+  bottom: 100%;
+  left: 0%;
+	font-size: 0px;
+	margin: 0px 0px 10px 0px;
+}
+
+.tooltip:hover .tooltiptext {
+ 	width: 100%;
+	font-size: 18px;
+	height: auto;
+	padding: 10px 5px;
+	border: solid 1px white;
+}
+
+/* art gallery */
+
+.art_gallery {
+	float: left;
+}
+
+h2, h4 {
+	float:left;
+	width: 100%;
+	text-align: center;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+.responsive h4 {
+	text-align: center;
+}
+
+/*phone */
+@media only screen and (max-width: 500px) {
+	/*index.html*/
+	.info {
+		height: 100%;
+		width: 100%;
+		background-color: white;
+		float:left;
+		}
+	.welcome img {
+		width: 0%;
+		height: 0%;
+	}
+	.info p {
+		padding: 5px;
+	}
+	/* about.html */
+	.information {
+		width: 100%;
+	}
+	.double-information {
+		width: 100%;
+		height: auto;
+	}
+	/* stem.html */
+	.middlegradestem {
+		height: 0;
+		padding: 0px;
+		width: 0;
+		border: 0;
+	}
+	/*gallery*/
+	.responsive {
+		width: 100%;
+	}
+}
+/* tablet */
+
+@media only screen and (max-width: 700px) {
+	/*index.html*/
+	.info {
+		height: 100%;
+		width: 100%;
+		}
+
+	.info p {
+		padding: 5px;
+	}
+	.welcome img {
+		width: 0%;
+		height: 0%;
+	}
+
+	/* about.html */
+	.information {
+		width: 49.99999%;
+		float:left;
+		padding: 10px;
+	}
+	.double-information {
+		width: 100%;
+		height: auto;
+	}
+	/* stem.html */
+	.middlegradestem {
+		height: 600px;
+		padding: 10px;
+	}
+	/*gallery*/
+	.responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+}
+/* computer */
+
+@media only screen and (min-width: 701px) {
+	.info {
+	float: left;
+	position: absolute;
+	z-index: 1000;
+	left: 5%;
+	top: 5%;
+	height: 75%;
+	width: 35%;
+	}
+}
