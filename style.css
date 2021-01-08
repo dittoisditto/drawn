@@ -2,20 +2,68 @@
 /* https://coolors.co/393d3f-fdfdff-c6c5b9-62929e-546a7b*/
 * {box-sizing: border-box}
 body {
-	font-family: 'Josefin Sans', sans-serif;
 	margin: 0;
-	background-color: #FDFDFF;
+	background-color: #263859;
+	text-align: center;
+	color: #d1dae6;
+	font-size: 25px;
+	font-family: 'VT323', monospace;
 }
 
 h1 {
-	text-align: center;
-	font-family: 'Nanum Brush Script', cursive;
-	font-size: 50px;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 35px;
+	color: #ff6768;
+	width: 100%;
 }
 
-.general-paragraph {
+h2 {
+	font-size: 20px;
+	font-family: 'Press Start 2P', cursive;
+	width: 100%;
+}
+
+h3 {
+	font-size: 15px;
+	font-family: 'Press Start 2P', cursive;
+	width: 100%;
+}
+
+h4 {
+	font-size: 12px;
+	font-family: 'Press Start 2P', cursive;
+	width: 100%;
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+p {
 	padding-left: 30px;
 	padding-right: 30px;
+
+}
+
+ul {
+	color: #d1dae6;
+	font-family: 'VT323', monospace;
 }
 
 
@@ -42,25 +90,10 @@ h1 {
 	position:relative;
 }
 
-.info {
-	padding: 5px;
-	color: black;
-	font-weight: bold;
-	text-align: center;
-}
-
-.info a {
-	text-decoration: underline;
-	color: black;
-}
-
-.info a:hover {
-	color: gray;
-}
-
-.info p {
-	padding: 20px;
-}
+.info { padding: 5px; color: black; font-weight: bold; text-align: center;}
+.info a {text-decoration: underline; color: black;}
+.info a:hover {color: gray;}
+.info p {padding: 20px; color: black;}
 
 /* about.html */
 .double-information {
@@ -72,20 +105,11 @@ h1 {
 	overflow: auto;
 }
 
-.double-information h3 {
-	text-align: center;
-}
-
 .information {
 	width: 24.99999%;
 	float:left;
 	padding: 20px;
 }
-
-.information h4 {
-	text-align: center;
-}
-
 
 /* stem.html */
 
@@ -129,12 +153,31 @@ h1 {
 
 .art_gallery {
 	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
-h2, h4 {
-	float:left;
+.non-event {
 	width: 100%;
-	text-align: center;
+	float: left;
+}
+
+hr {
+	border: dashed 2px white;
+	width: 90%;
+}
+
+.event {
+	float: left;
+	width: 50%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.paragraphs {
+	height: 250px;
+	overflow: auto;
+	background-color: #17223B;
+	margin: 20px;
 }
 
 div.gallery {
@@ -163,44 +206,24 @@ div.desc {
 .responsive h4 {
 	text-align: center;
 }
-
-/*phone */
-@media only screen and (max-width: 500px) {
-	/*index.html*/
+@media only screen and (min-width: 701px) {
 	.info {
-		height: 100%;
-		width: 100%;
-		background-color: white;
-		float:left;
-		}
-	.welcome img {
-		width: 0%;
-		height: 0%;
+	float: left;
+	position: absolute;
+	z-index: 1000;
+	left: 5%;
+	top: 5%;
+	height: 75%;
+	width: 35%;
 	}
-	.info p {
-		padding: 5px;
+	.left {
+		border-right: dashed 2px white;
 	}
-	/* about.html */
-	.information {
-		width: 100%;
-	}
-	.double-information {
-		width: 100%;
-		height: auto;
-	}
-	/* stem.html */
-	.middlegradestem {
-		height: 0;
-		padding: 0px;
-		width: 0;
-		border: 0;
-	}
-	/*gallery*/
-	.responsive {
-		width: 100%;
+
+	.right{
+		border-left: dashed 2px white;
 	}
 }
-/* tablet */
 
 @media only screen and (max-width: 700px) {
 	/*index.html*/
@@ -237,18 +260,57 @@ div.desc {
     width: 49.99999%;
     margin: 6px 0;
   }
+	.event {
+		width: 100%;
+	}
+	.paragraphs {
+		height: auto;
+		background-color: inherit;
+		margin: 5px;
+	}
 
 }
-/* computer */
-
-@media only screen and (min-width: 701px) {
+/*phone */
+@media only screen and (max-width: 500px) {
+	/*index.html*/
 	.info {
-	float: left;
-	position: absolute;
-	z-index: 1000;
-	left: 5%;
-	top: 5%;
-	height: 75%;
-	width: 35%;
+		height: 100%;
+		width: 100%;
+		background-color: white;
+		float:left;
+		}
+	.welcome img {
+		width: 0%;
+		height: 0%;
+	}
+	.info p {
+		padding: 5px;
+	}
+	/* about.html */
+	.information {
+		width: 100%;
+	}
+	.double-information {
+		width: 100%;
+		height: auto;
+	}
+	/* stem.html */
+	.middlegradestem {
+		height: 0;
+		padding: 0px;
+		width: 0;
+		border: 0;
+		margin: 0;
+	}
+	/*gallery*/
+	.responsive {
+		width: 100%;
+	}
+	.event {
+		width: 100%;
 	}
 }
+/* tablet */
+
+
+/* computer */
