@@ -37,22 +37,22 @@ h4 {
 
 /* unvisited link */
 a:link {
-  color: red;
+  color: #ff6768;
 }
 
 /* visited link */
 a:visited {
-  color: green;
+  color: #d1dae6;
 }
 
 /* mouse over link */
 a:hover {
-  color: hotpink;
+  color: #263859;
 }
 
 /* selected link */
 a:active {
-  color: blue;
+  color: #d1455c;
 }
 
 p {
@@ -64,6 +64,9 @@ p {
 ul {
 	color: #d1dae6;
 	font-family: 'VT323', monospace;
+	text-align: left;
+	display: table;
+	margin: 15px auto;
 }
 
 
@@ -73,15 +76,18 @@ ul {
 }
 
 .button a {
-	background-color: #546a7b;
+	background-color:inherit;
 	text-decoration: none;
 	padding: 10px 20px;
-	color: #fdfdff;
+	color: #d1dae6;
+	border: dashed 2px #d1dae6;
 }
 
 .button a:hover {
-	background-color: #62929e;
-	color: #c6c5b9;
+	background-color: #ff6768;
+	color: white;
+	border: solid 2px #ff6768;
+	border: 0;
 }
 
 /* Index.html */
@@ -93,29 +99,11 @@ ul {
 .info { padding: 5px; color: black; font-weight: bold; text-align: center;}
 .info a {text-decoration: underline; color: black;}
 .info a:hover {color: gray;}
-.info p {padding: 20px; color: black;}
-
-/* about.html */
-.double-information {
-	width: 49.99999%;
-	float: left;
-	padding: 20px;
-	height: 350px;
-	border: solid 1px black;
-	overflow: auto;
-}
-
-.information {
-	width: 24.99999%;
-	float:left;
-	padding: 20px;
-}
-
-/* stem.html */
+.info p {padding: 5px; color: black;}
 
 .middlegradestem {
 	width: 90%;
-	border: .5px solid #62929E;
+	border: dashed 4px #d1dae6;
 	height: 600px;
 	display:block;
 	margin: 10px auto;
@@ -123,14 +111,14 @@ ul {
 
 .tooltip {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .tooltip .tooltiptext {
   width: 0px;
 	height: 0px;
-  background-color: #393D3F;
-  color: #fff;
+  background-color: #17223B;
+  color: #d1dae6;
   text-align: center;
   padding: 5px 0;
   position: absolute;
@@ -143,10 +131,10 @@ ul {
 
 .tooltip:hover .tooltiptext {
  	width: 100%;
-	font-size: 18px;
+	font-size: 20px;
 	height: auto;
-	padding: 10px 5px;
-	border: solid 1px white;
+	padding: 10px;
+	border: dashed 4px #d1dae6;
 }
 
 /* art gallery */
@@ -163,7 +151,7 @@ ul {
 }
 
 hr {
-	border: dashed 2px white;
+	border: dashed 2px #d1dae6;
 	width: 90%;
 }
 
@@ -181,23 +169,19 @@ hr {
 }
 
 div.gallery {
-  border: 1px solid #ccc;
+  border: dashed 4px #d1dae6;
+
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: dashed 4px #17223B;
 }
 
 div.gallery img {
   width: 100%;
   height: auto;
+	display: block;
 }
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
 .responsive {
   padding: 0 6px;
   float: left;
@@ -231,25 +215,18 @@ div.desc {
 		height: 100%;
 		width: 100%;
 		}
-
-	.info p {
-		padding: 5px;
-	}
+		.info p {
+			padding: 5px;
+			color: #d1dae6;
+		}
+		.info a {
+			color: #d1dae6;
+		}
 	.welcome img {
 		width: 0%;
 		height: 0%;
 	}
 
-	/* about.html */
-	.information {
-		width: 49.99999%;
-		float:left;
-		padding: 10px;
-	}
-	.double-information {
-		width: 100%;
-		height: auto;
-	}
 	/* stem.html */
 	.middlegradestem {
 		height: 600px;
@@ -276,7 +253,6 @@ div.desc {
 	.info {
 		height: 100%;
 		width: 100%;
-		background-color: white;
 		float:left;
 		}
 	.welcome img {
@@ -285,15 +261,12 @@ div.desc {
 	}
 	.info p {
 		padding: 5px;
+		color: #d1dae6;
 	}
-	/* about.html */
-	.information {
-		width: 100%;
+	.info a {
+		color: #d1dae6;
 	}
-	.double-information {
-		width: 100%;
-		height: auto;
-	}
+
 	/* stem.html */
 	.middlegradestem {
 		height: 0;
@@ -310,7 +283,3 @@ div.desc {
 		width: 100%;
 	}
 }
-/* tablet */
-
-
-/* computer */

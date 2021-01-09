@@ -1,14 +1,7 @@
 .footer {
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    bottom: 0;
-    right: 0;
     width: 100%;
-    background-color: #62929E;
+    background-color: #17223B;
     color: white;
     text-align: center;
-    height: 100px;
-    padding: 10px;
     float:left;
 }
