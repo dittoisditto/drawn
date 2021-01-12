@@ -94,12 +94,23 @@ ul {
 
 .welcome {
 	position:relative;
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: crisp-edges;
 }
 
-.info { padding: 5px; color: black; font-weight: bold; text-align: center;}
-.info a {text-decoration: underline; color: black;}
+.title_image {
+	width: 100%;
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: crisp-edges;
+}
+
+.info { padding: 5px; font-weight: bold; text-align: center;}
+.info h1 {color: #17223B;}
+.info a {text-decoration: underline; color: #17223B;}
 .info a:hover {color: gray;}
-.info p {padding: 5px; color: black;}
+.info p {padding: 5px; color: #17223B;}
 
 .middlegradestem {
 	width: 90%;
@@ -222,9 +233,11 @@ div.gallery img {
 		.info a {
 			color: #d1dae6;
 		}
+		.info h1 {
+			color: #d1dae6;
+		}
 	.welcome img {
-		width: 0%;
-		height: 0%;
+		width: 100%
 	}
 
 	/* stem.html */
@@ -256,14 +269,16 @@ div.gallery img {
 		float:left;
 		}
 	.welcome img {
-		width: 0%;
-		height: 0%;
+		width: 100%
 	}
 	.info p {
 		padding: 5px;
 		color: #d1dae6;
 	}
 	.info a {
+		color: #d1dae6;
+	}
+	.info h1 {
 		color: #d1dae6;
 	}
 
