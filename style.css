@@ -108,8 +108,6 @@ ul {
 
 .info { padding: 5px; font-weight: bold; text-align: center;}
 .info h1 {color: #17223B;}
-.info a {text-decoration: underline; color: #17223B;}
-.info a:hover {color: gray;}
 .info p {padding: 5px; color: #17223B;}
 
 .middlegradestem {
@@ -202,7 +200,7 @@ div.gallery img {
 .responsive h4 {
 	text-align: center;
 }
-@media only screen and (min-width: 701px) {
+@media only screen and (min-width: 1001px) {
 	.info {
 	float: left;
 	position: absolute;
@@ -212,6 +210,8 @@ div.gallery img {
 	height: 75%;
 	width: 35%;
 	}
+	.info a {text-decoration: underline; color: #17223B;}
+	.info a:hover {color: #d1dae6;}
 	.left {
 		border-right: dashed 2px white;
 	}
@@ -221,24 +221,22 @@ div.gallery img {
 	}
 }
 
-@media only screen and (min-width: 501px) and (max-width: 1150px) {
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
 	/*index.html*/
 	.info {
 		height: 100%;
 		width: 100%;
-		}
-		.info p {
-			padding: 5px;
-			color: #d1dae6;
-		}
-		.info a {
-			color: #d1dae6;
-		}
-		.info h1 {
-			color: #d1dae6;
+		float:none;
 		}
 	.welcome img {
 		width: 100%
+	}
+	.info p {
+		padding: 5px;
+		color: #d1dae6;
+	}
+	.info h1 {
+		color: #d1dae6;
 	}
 
 	/* stem.html */
@@ -268,7 +266,7 @@ div.gallery img {
 
 }
 /*phone */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 	/*index.html*/
 	.info {
 		height: 100%;
@@ -280,9 +278,6 @@ div.gallery img {
 	}
 	.info p {
 		padding: 5px;
-		color: #d1dae6;
-	}
-	.info a {
 		color: #d1dae6;
 	}
 	.info h1 {
